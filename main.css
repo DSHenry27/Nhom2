@@ -1,0 +1,286 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+  background: linear-gradient(to right, #3F51B5, #F4ECD8);
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background-color: #F4ECD8;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.heading hr {
+  margin: 10px 0;
+  border: none;
+  height: 2px;
+  background-color: #3F51B5;
+}
+
+.title {
+  font-size: 3rem;
+  margin: 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #3F51B5;
+}
+
+.img {
+  text-align: center;
+  border: 10px;
+}
+
+.topnav {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(90deg, #3F51B5, #5C6BC0);
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.topnav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #F4ECD8;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.topnav a:hover {
+  background-color: rgba(244,236,216,0.7);
+  transform: scale(1.1);
+  color: #3F51B5;
+}
+
+.image-center img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+
+.image-center img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.7);
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: center; 
+  gap: 15px;              
+  flex-wrap: wrap;         
+  margin-top: 20px;
+}
+
+.image-gallery img {
+  width: 25%;             
+  min-width: 200px;      
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-gallery img {
+  width: 30%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: grayscale(100%);
+}
+
+.image-gallery img:hover {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+}
+
+.main-container {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.main-container h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #3F51B5;
+}
+
+.main-container p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.space {
+
+  text-align: center;
+
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.welcome-section,
+.news-section,
+.event-section {
+  background-color: #FFF8E1;
+  padding: 10px 20px 20px 20px;  
+  border: 2px solid #3F51B5;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.news-section h1,
+.event-section h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #3F51B5;
+}
+
+.news-section img {
+  max-width: 70%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-section h2 {
+  font-size: 1.2rem;
+  color: #3F51B5;
+}
+
+.news-section p,
+.event-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.reminder-section {
+  background-color: #FFF8E1; 
+  color: #3F51B5; 
+  padding: 20px;
+  border-radius: 5px;
+  border: 2px solid #3F51B5;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.reminder-section h1 {
+  margin-top: 0;
+  color: #3F51B5;
+}
+
+.reminder-section input[type="text"] {
+  padding: 12px;
+  width: 300px;
+  margin-right: 10px;
+  border: 2px solid #3F51B5;
+  border-radius: 5px;
+  outline: none;
+}
+
+.reminder-section input[type="text"]:focus {
+  border-color: #5C6BC0;
+}
+
+.reminder-section button {
+  background-color: #3F51B5;
+  border: none;
+  color: white;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reminder-section button:hover {
+  background-color: #5C6BC0;
+}
+
+.fanpage-button {
+  margin-top: 10px;
+}
+
+.fanpage-button a {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #3F51B5;
+  color: #F4ECD8;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.fanpage-button a:hover {
+  background: linear-gradient(90deg, #3F51B5, #b408b4);
+  transform: scale(1.05);
+  color: #fff;
+}
+
+.exam-banner {
+  background: linear-gradient(to right, #FFEBC2, #FFDFA0);
+  color: #8D2D19;
+  text-align: center;
+  padding: 20px;
+  font-size: 3rem; /* Chữ to hơn */
+  font-weight: bold;
+  font-style: italic; /* In nghiêng */
+  font-family: 'Segoe UI', cursive;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.exam-banner::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://i.pinimg.com/736x/af/a0/be/afa0beadb1e9aca20fb3fd3d95745f1f.jpg") no-repeat center/cover;
+  opacity: 0.2;         
+  pointer-events: none;  
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+  font-size: 0.9rem;
+  color: #666;
+}
