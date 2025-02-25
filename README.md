@@ -1,5 +1,5 @@
 # Nhóm 2
-[Baotuong Nhóm 2](https://dshenry27.github.io/Nhom2/)
+[Báo Tường Nhóm 2](https://dshenry27.github.io/Nhom2/)
 
 ## Thành viên
 - Phạm Khánh Hưng & Đỗ Ngọc Phương Quyên  
