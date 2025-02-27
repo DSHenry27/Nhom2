@@ -1,72 +1,84 @@
+/* Áp dụng cuộn mượt cho toàn bộ trang */
 html {
     scroll-behavior: smooth;
 }
+
+/* Thiết lập kiểu dáng chung cho phần thân trang (body) */
 body {
-  background: linear-gradient(to right, #3F51B5, #F4ECD8);
+  background: linear-gradient(to right, slateblue, lightgoldenrodyellow);
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Định dạng cho vùng chứa chính của nội dung */
 .container {
   max-width: 800px;
   margin: auto;
-  background-color: #F4ECD8;
+  background-color: lightgoldenrodyellow;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+/* Thiết lập kiểu dáng cho phần tiêu đề */
 .heading {
   text-align: center;
   margin-bottom: 5px;
 }
 
+/* Định dạng đường kẻ ngang trong tiêu đề */
 .heading hr {
   margin: 10px 0;
   border: none;
   height: 2px;
-  background-color: #3F51B5;
+  background-color: slateblue;
 }
 
+/* Thiết lập kiểu dáng cho tiêu đề chính */
 .title {
   font-size: 3rem;
   margin: 0;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #3F51B5;
+  color: slateblue;
 }
 
+/* Định dạng cho phần hình ảnh */
 .img {
   text-align: center;
   border: 10px;
 }
 
+/* Thiết lập kiểu dáng cho thanh điều hướng */
 .topnav {
   display: flex;
   justify-content: center;
-  background: linear-gradient(90deg, #3F51B5, #5C6BC0);
+  background: linear-gradient(90deg, slateblue, steelblue);
   padding: 12px 20px;
   margin-bottom: 20px;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
+/* Định dạng các liên kết trong thanh điều hướng */
 .topnav a {
   margin: 0 15px;
   text-decoration: none;
-  color: #F4ECD8;
+  color: lightgoldenrodyellow;
   font-weight: bold;
   padding: 8px 16px;
   border-radius: 5px;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+/* Hiệu ứng khi di chuột qua các liên kết */
 .topnav a:hover {
   background-color: rgba(244,236,216,0.7);
   transform: scale(1.1);
-  color: #3F51B5;
+  color: slateblue;
 }
 
+/* Định dạng cho hình ảnh căn giữa */
 .image-center img {
   max-width: 100%;
   height: auto;
@@ -76,33 +88,38 @@ body {
   animation: pulse 5s infinite;
 }
 
+/* Định nghĩa hiệu ứng nhấp nháy (pulse) */
 @keyframes pulse {
   0% { transform: scale(1); }
   50% { transform: scale(1.03); }
   100% { transform: scale(1); }
 }
 
+/* Hiệu ứng khi di chuột qua hình ảnh căn giữa */
 .image-center img:hover {
   transform: scale(1.1);
   box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.7);
 }
 
+/* Định dạng cho thư viện ảnh */
 .image-gallery {
   display: flex;
-  justify-content: center; 
-  gap: 15px;              
-  flex-wrap: wrap;         
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
   margin-top: 20px;
 }
 
+/* Định dạng cho từng hình ảnh trong thư viện */
 .image-gallery img {
-  width: 25%;             
-  min-width: 200px;      
+  width: 25%;
+  min-width: 200px;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Định dạng cho từng hình ảnh trong thư viện */
 .image-gallery img {
   width: 30%;
   max-width: 250px;
@@ -113,27 +130,32 @@ body {
   filter: grayscale(100%);
 }
 
+/* Hiệu ứng khi di chuột qua hình ảnh trong thư viện */
 .image-gallery img:hover {
   transform: scale(1.05);
   filter: grayscale(0%);
 }
 
+/* Định dạng cho vùng chứa nội dung chính */
 .main-container {
   margin-bottom: 30px;
   text-align: center;
 }
 
+/* Định dạng cho tiêu đề trong vùng chứa nội dung chính */
 .main-container h1 {
   font-size: 2rem;
   margin-bottom: 10px;
-  color: #3F51B5;
+  color: slateblue;
 }
 
+/* Định dạng cho đoạn văn trong vùng chứa nội dung chính */
 .main-container p {
   font-size: 1rem;
   line-height: 1.6;
 }
 
+/* Định dạng cho phần không gian (ví dụ: footer) */
 .space {
 
   text-align: center;
@@ -145,24 +167,27 @@ body {
   color: #666;
 }
 
+/* Định dạng cho các section (welcome, news, event) */
 .welcome-section,
 .news-section,
 .event-section {
-  background-color: #FFF8E1;
-  padding: 10px 20px 20px 20px;  
-  border: 2px solid #3F51B5;
+  background-color: cornsilk;
+  padding: 10px 20px 20px 20px;
+  border: 2px solid slateblue;
   border-radius: 8px;
   margin-bottom: 30px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+/* Định dạng cho tiêu đề trong các section (news, event) */
 .news-section h1,
 .event-section h1 {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #3F51B5;
+  color: slateblue;
 }
 
+/* Định dạng cho hình ảnh trong section tin tức */
 .news-section img {
   max-width: 70%;
   height: auto;
@@ -172,46 +197,53 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Định dạng cho tiêu đề cấp 2 trong section tin tức */
 .news-section h2 {
   font-size: 1.2rem;
-  color: #3F51B5;
+  color: slateblue;
 }
 
+/* Định dạng cho đoạn văn trong các section (news, event) */
 .news-section p,
 .event-section p {
   font-size: 1rem;
   line-height: 1.6;
 }
 
+/* Định dạng cho section lời nhắc */
 .reminder-section {
-  background-color: #FFF8E1; 
-  color: #3F51B5; 
+  background-color: cornsilk;
+  color: slateblue;
   padding: 20px;
   border-radius: 5px;
-  border: 2px solid #3F51B5;
+  border: 2px solid slateblue;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
+/* Định dạng cho tiêu đề trong section lời nhắc */
 .reminder-section h1 {
   margin-top: 0;
-  color: #3F51B5;
+  color: slateblue;
 }
 
+/* Định dạng cho ô nhập liệu trong section lời nhắc */
 .reminder-section input[type="text"] {
   padding: 12px;
   width: 300px;
   margin-right: 10px;
-  border: 2px solid #3F51B5;
+  border: 2px solid slateblue;
   border-radius: 5px;
   outline: none;
 }
 
+/* Định dạng cho ô nhập liệu khi focus */
 .reminder-section input[type="text"]:focus {
-  border-color: #5C6BC0;
+  border-color: steelblue;
 }
 
+/* Định dạng cho nút trong section lời nhắc */
 .reminder-section button {
-  background-color: #3F51B5;
+  background-color: slateblue;
   border: none;
   color: white;
   padding: 12px 32px;
@@ -223,39 +255,44 @@ body {
   cursor: pointer;
 }
 
+/* Hiệu ứng khi di chuột qua nút */
 .reminder-section button:hover {
-  background-color: #5C6BC0;
+  background-color: steelblue;
 }
 
+/* Định dạng cho nút fanpage */
 .fanpage-button {
   margin-top: 10px;
 }
 
+/* Định dạng cho liên kết trong nút fanpage */
 .fanpage-button a {
   display: inline-block;
   padding: 12px 24px;
-  background-color: #3F51B5;
-  color: #F4ECD8;
+  background-color: slateblue;
+  color: lightgoldenrodyellow;
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
   transition: background 0.3s ease, transform 0.3s ease;
 }
 
+/* Hiệu ứng khi di chuột qua liên kết trong nút fanpage */
 .fanpage-button a:hover {
-  background: linear-gradient(90deg, #3F51B5, #b408b4);
+  background: linear-gradient(90deg, slateblue, #b408b4);
   transform: scale(1.05);
-  color: #fff;
+  color: white;
 }
 
+/* Định dạng cho banner kỳ thi */
 .exam-banner {
-  background: linear-gradient(to right, #FFEBC2, #FFDFA0);
-  color: #8D2D19;
+  background: linear-gradient(to right, papayawhip, khaki);
+  color: firebrick;
   text-align: center;
   padding: 20px;
-  font-size: 3rem; /* Chữ to hơn */
+  font-size: 3rem;
   font-weight: bold;
-  font-style: italic; /* In nghiêng */
+  font-style: italic;
   font-family: 'Segoe UI', cursive;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -264,6 +301,7 @@ body {
   overflow: hidden;
 }
 
+/* Tạo lớp phủ (overlay) cho banner kỳ thi */
 .exam-banner::before {
   content: "";
   position: absolute;
@@ -272,10 +310,11 @@ body {
   width: 100%;
   height: 100%;
   background: url("https://i.pinimg.com/736x/af/a0/be/afa0beadb1e9aca20fb3fd3d95745f1f.jpg") no-repeat center/cover;
-  opacity: 0.2;         
-  pointer-events: none;  
+  opacity: 0.2;
+  pointer-events: none;
 }
 
+/* Định dạng cho footer */
 .footer {
   text-align: center;
   margin-top: 20px;
